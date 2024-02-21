@@ -1,0 +1,31 @@
+def calculate_average_sleep_hours(sleep_records):
+    """
+    Calculate the average sleep hours based on a list of sleep records.
+
+    Parameters:
+    - sleep_records: List of sleep hours for each night.
+
+    Returns:
+    - average_sleep_hours: The average sleep hours.
+    """
+
+    # Check if the list is not empty
+    if not sleep_records:
+        return 0  # Return 0 if there are no sleep records
+
+    # Calculate the average sleep hours
+    total_sleep_hours = sum(sleep_records)
+    average_sleep_hours = total_sleep_hours / len(sleep_records)
+
+    return average_sleep_hours
+
+# Example usage:
+if __name__ == "__main__":
+    # Example list of sleep records (replace with your actual data)
+    sleep_records = [7, 8, 6, 7, 9, 8]
+
+    # Calculate the average sleep hours
+    average_sleep_hours = calculate_average_sleep_hours(sleep_records)
+
+    # Print the result
+    print(f"Average Sleep Hours: {average_sleep_hours:.2f} hours")
