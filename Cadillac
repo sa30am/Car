@@ -1,4 +1,4 @@
-# Cadillac 18
+# Cadillac 1999999999999999999
 def calculate_average_sleep_hours(sleep_records):
     """
     Calculate the average sleep hours based on a list of sleep records.
